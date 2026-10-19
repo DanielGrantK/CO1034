@@ -6,4 +6,4 @@ members:
 Daniel Kouvaros
 Anastasija Lopatenoka
 Savvas Lemonaris
-Nagya Florou
+Nayia Florou
