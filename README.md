@@ -1,2 +1,9 @@
 # CO1034
-Treasure hunt
+Treasure hunt.
+
+Team B
+members: 
+Daniel Kouvaros
+Anastasija Lopatenoka
+Savvas Lemonaris
+Nagya Florou
