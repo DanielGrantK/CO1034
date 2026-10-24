@@ -1,0 +1,88 @@
+:root {
+    --main: #e63946;
+    --main-dark: #c1121f;
+    --dakr: #1d1d2c;
+    --light: #fdf3ec;
+    --gray: #6b6b7b;
+    --white: #fff;
+}
+
+* { /* "*" makes spacing around and inside elements to 0, so there are no default browser gaps */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--dark);
+    line-height: 1.6; /*Vertical text separation*/
+}
+
+.container { 
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*========= BUTTONS  =========*/
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--main);
+    color: var(--white);
+    text-decoration: none; /*To remove underlining of links*/
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid var(--main);
+    transition: 0.2s;
+}
+
+.btn:hover { /*To have a smooth color transition*/
+    background: var(--main-dark);
+    border-color: var(--main-dark);
+}
+
+.btn-small { /*Smaller version of .btn, use together for smaller buttons*/
+    padding: 8px 20px;
+}
+
+/*========= HEADER-BAR  =========*/
+.header-bar {
+    background: var(--white);
+    position: sticky;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06); /*Shadow for boxes*/
+    top: 0;
+    z-index: 10; /*To set a header as a top layer*/
+}
+
+.header-inner {
+    display: flex; /*To put elements from left to right*/
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--main);
+    text-decoration: none;
+}
+
+.header-links a {
+    margin: 0 15px;
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.header-links a:hover {
+    color: var(--main);
+}
