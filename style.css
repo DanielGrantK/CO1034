@@ -1,7 +1,7 @@
 :root {
     --main: #e63946;
     --main-dark: #c1121f;
-    --dakr: #1d1d2c;
+    --dark: #1d1d2c;
     --light: #fdf3ec;
     --gray: #6b6b7b;
     --white: #fff;
@@ -52,6 +52,16 @@ body {
     padding: 8px 20px;
 }
 
+.btn-outline {
+    background: transparent;
+    color: var(--main);
+}
+
+.btn-outline:hover {
+    background: var(--main);
+    color: var(--white);
+}
+
 /*========= HEADER-BAR  =========*/
 .header-bar {
     background: var(--white);
@@ -85,4 +95,67 @@ body {
 
 .header-links a:hover {
     color: var(--main);
+}
+
+/*======== FIRST BLOCK ========*/
+
+.first-block {
+    background: var(--light);
+    padding: 90px 0; /*"0" is forcing it not to make extra space from left and right*/
+}
+
+.first-block-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.first-block-text {
+    max-width: 500px;
+}
+
+.first-block h1 {
+    font-size: 3.2rem;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.first-block p {
+    color: var(--gray);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.first-block-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.mockup {/*Block for names*/
+    margin-left: auto; /*to push it from left to right (takes all space from left)*/
+    background: var(--white);
+    width: 340px; 
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.mockup-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gray);
+    margin-bottom: 14px;
+    padding-left: 4px;
+}
+
+.dev-name {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background: #f6f6f8;
+    border-radius: 8px;
+    border-left: 4px solid var(--main);
 }
