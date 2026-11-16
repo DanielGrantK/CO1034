@@ -20,3 +20,18 @@ Ekesh Khaki: Developer
 <=======================================================>
 
 
+<======= Meeting 02/11 Monday =======>
+
+On 02/11 we reviewed the progress of the project.
+
+The logo redesign was completed by Daniel, Savvas and Nayia.
+
+Raja Samad and Ekesh were paired up and introduced to development work, starting with the layout of app.html.
+
+Progress has been made on index.html.
+
+Ihor was assigned the role of secretary.
+<=======================================================>
+<=======================================================>
+
+
