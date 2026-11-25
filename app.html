@@ -1,8 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
-    <title>App tilte</title> 
-    <meta charset="UTF-8"> 
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP</title>
+    <link rel="stylesheet" href="appstyle.css" />
+    <script src="js/appscript.js" defer></script>
 </head>
+
+<body>
+
+<!-- ======== HEADER ======== -->
+<header class="header-bar">
+    <div class="container header-inner">
+        <div>
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Lynx logo">Lynx Trail</a>
+        </div>
+        <div>
+            <button class="button-help" id="button-help">Help</button>
+            <button class="button-account" id="button-account">My profile</button>
+        </div>
+    </div>
+</header>
+
+<!-- ======== LIST OF HUNTS ========-->
+<section class="hunt-list" id="hunt-list">
+    <div class="container hunt-list-inner">
+        <h2>Available Treasure Hunts:</h2>
+        <ul class="hunts" id="hunts_list"></ul>
+        <button class="button-refresh" id="refresh">Refresh</button>
+    </div>
+</section>
+
+<!-- ======== START PAGE ========-->
+<section class="hunt-start" id="hunt-start">
+    <div class="container hunt-start-inner">
+        <h2>Please Enter the Name of the Player or Team!</h2>
+        <h3>We are now loading available hunts.</h3>
+        <div class="hunt-start-form">
+            <form class="start-form" id="start-form">
+                <input type="text" class="player-name" id="player_name" placeholder="Name" required/>
+                <input type="text" class="player-email" id="player_email" placeholder="Email" required/>
+                <input type="submit" class="start-button" value="Start the Hunt"/>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ======== SCORE ========-->
+<section class="player-score" id="player-score">
+    <div class="container player-score-inner">
+        <h3 class="score" id="score">Score: </h3>
+    </div>
+</section>
+
+
+<!-- ======== QUESTION TYPES ========-->
+<section class="question" id="question">
+    <div class="container question-inner">
+        <h2 class="question-text" id="question-text"></h2>
+    </div>
+</section>
+
+<!-- ======== BOOLEAN ========-->
+<section class="bool-question" id="BOOLEAN">
+    <h4 class="question-type">Choose True or False?</h4>
+    <div class="bool-options">
+        <button type="button" class="bool-option-true" id="bool-option-true">True</button>
+        <button type="button" class="bool-option-false" id="bool-option-false">False</button>
+    </div>
+</section>
+
+<!-- ======== MCQ ========-->
+<section class="mcq-question" id="MCQ">
+    <h4 class="question-type">Choose One of Four?</h4>
+    <div class="mcq-options-a-b">
+        <button type="button" class="mcq-option-a" id="mcq-option-a">A</button>
+        <button type="button" class="mcq-option-b" id="mcq-option-b">B</button>
+    </div>
+    <div class="mcq-options-c-d">
+        <button type="button" class="mcq-option-c" id="mcq-option-c">C</button>
+        <button type="button" class="mcq-option-d" id="mcq-option-d">D</button>
+    </div>
+</section>
+
+<!-- ======== INTEGER ========-->
+<section class="integer-question" id="INTEGER">
+    <h4 class="question-type">Enter an Integer</h4>
+    <div class="integer-option">
+        <form>
+            <input type="text" class="integer-input" id="answerINTEGER" placeholder="Integer" required/>
+            <input type="submit" class="integer-button" id="submitINTEGER" value="Submit"/>
+        </form>
+    </div>
+</section>
+
+<!-- ======== NUMERIC ========-->
+<section class="numeric-question" id="NUMERIC">
+    <h4 class="question-type">Enter a Numeric Value</h4>
+    <div class="numeric-option">
+        <form>
+            <input type="text" class="numeric-input" id="answerNUMERIC" placeholder="Numeric" required/>
+            <input type="submit" class="numeric-button" id="submitNUMERIC" value="Submit"/>
+        </form>
+    </div>
+</section>
+
+<!-- ======== TEXT ========-->
+<section class="text-question" id="TEXT">
+    <h4 class="question-type">Enter a Word or Phrase</h4>
+    <div class="text-option">
+        <form>
+            <input type="text" class="text-input" id="answerTEXT" placeholder="Text" required/>
+            <input type="submit" class="text-button" id="submitTEXT" value="Submit"/>
+        </form>
+    </div>
+</section>
+
+<!-- ======== BOTTOM BLOCK ========-->
+<section class="bottom-block" id="bottom-block">
+    <div class="container bottom-block-inner">
+        <div class="time-left">
+            <p id="time-left">Time Left: 00:00</p>
+        </div>
+        <div class="questions-left">
+            <p id="questions-left"></p>
+        </div>
+        <div class="skip">
+            <button class="skip-button">Skip</button>
+        </div>
+    </div>
+</section>
+
+<!-- ======== ERROR ========-->
+<section class="error-alert" id="error-alert">
+    <div class="error-message" id="error-message">
+        <p class="error-message-text" id="error-message-text"></p>
+        <button class="error-ok" id="error-ok">OK</button>
+    </div>
+</section>
+</body>
 </html>
