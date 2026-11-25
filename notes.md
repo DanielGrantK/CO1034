@@ -34,4 +34,14 @@ Ihor was assigned the role of secretary.
 <=======================================================>
 <=======================================================>
 
+<======= Meeting 16/11 Monday =======>
 
+On 16/11 we reviewed the progress of the project.
+
+Savvas started working on API requests to fetch the questions, and he will finish index.html together with Nayia.
+
+Daniel completed most of index.html (the landing page).
+
+Anastasija started the layout of app.html, working on the visual part.
+<=======================================================>
+<=======================================================>
