@@ -224,3 +224,18 @@ h2 {
 .card p {
     color: var(--gray);
 }
+/* How it works */
+.how { background: lightgray; padding: 60px 0; text-align: center; }
+.steps { display: flex; justify-content: space-around;  gap: 90px; }
+.step-num {
+    width: 50px; height: 50px; line-height: 50px;
+    margin: 0 auto 10px; border-radius: 50%;/*this is what makes them circles*/
+    background: red; color: white; font-weight: bold;}
+.step:nth-child(2) {/* changed the num 2 pos cuz it wasnt in the middle*/
+    position: relative;
+    left: 70px;
+}
+/* Ready to start?*/
+.cta { background: var(--dark); padding: 60px 0;color: white; text-align: center; }
+/* Footer */
+.footer { text-align: center; }
