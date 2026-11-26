@@ -38,7 +38,7 @@ Ihor was assigned the role of secretary.
 
 On 16/11 we reviewed the progress of the project.
 
-Savvas started working on API requests to fetch the questions, and he will finish index.html together with Nayia.
+Savvas started working on API requests to fetch the questions, and he will finish index.html.
 
 Daniel completed most of index.html (the landing page).
 
