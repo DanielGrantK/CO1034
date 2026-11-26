@@ -7,7 +7,7 @@ refreshButton.addEventListener("click", function() {
 });
 
 //hide error message
-document.getElementById("error-ok").addEventListener("click", (e) => {
+document.getElementById("error-ok").addEventListener("click", () => {
     document.getElementById("error-alert").style.display = "none";
 })
 
@@ -43,7 +43,7 @@ function getChallenges() {
     fetch("https://codecyprus.org/th/api/list")
         .then(response => response.json()) //Parse JSON text to JavaScript object
         .then(jsonObject => {
-            console.log(jsonObject); //TODO - Success, do something with the data.
+            console.log(jsonObject);
             treasureHuntsArray = jsonObject.treasureHunts;
 
             for (let i = 0; i < treasureHuntsArray.length; i++) {
@@ -152,6 +152,8 @@ async function getQuestion() {
 
             //display the player score
             await getScore();
+            scoreDisplay.textContent = "Score: " + playerScore;
+            document.getElementById("player-score").style.display = "block";
 
             correctScore = treasureHuntQuestion.correctScore;
             wrongScore = treasureHuntQuestion.wrongScore;
@@ -251,7 +253,6 @@ async function getAnswer() {
                 //wrong answer
             }
 
-            await getScore();
             await getQuestion();
         }
         else {
